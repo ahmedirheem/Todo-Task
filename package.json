@@ -16,5 +16,13 @@
     "multer": "^1.4.5-lts.1",
     "nodemon": "^2.0.20"
   },
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmedirheem/Todo-Task.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ahmedirheem/Todo-Task/issues"
+  },
+  "homepage": "https://github.com/ahmedirheem/Todo-Task#readme"
 }

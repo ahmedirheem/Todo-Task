@@ -8,7 +8,7 @@ const app = express()
 
 // DataBase connection
 // , {userNewUrlParser: true, useUnifiedTopology: true}
-mongoose.connect(process.env.DB_ULI)
+mongoose.connect("mongodb://localhost:27017/crud_app");
 let db = mongoose.connection
 db.on("error", error => console.log(error))
 db.once("open", ()=>console.log('Connected to db'))
@@ -37,6 +37,6 @@ app.use('/js', express.static(path.resolve(__dirname, 'assets/js')))
 
 app.use('', require('./routes/routes'))
 
-app.listen(PORT, ()=>{
-    console.log(`Server is running on port ${PORT}`);
+app.listen(5000, ()=>{
+    console.log(`Server is running on port ${5000}`);
 })
